@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var request = require('request');
 var gitlabTransactions = require('../paynalBotTransactions/messages')
 router.post('/', function(req, res, next) {
     var Model = {

@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var request = require('request');
 var sendMessageWithHeader = require('../paynalBotTransactions/messages').SendMessageWithHeader;
 router.post('/:ChatId', function(req, res, next) {
     var Model = req.body;
