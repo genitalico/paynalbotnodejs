@@ -8,6 +8,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var update = require('./routes/update');
 var sendMessage = require('./routes/sendMessage');
+var gitlab = require('./routes/gitlab');
 var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -25,6 +26,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/api/update', update);
 app.use('/api/sendMessage', sendMessage);
+app.use('/api/Gitlab', gitlab);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
