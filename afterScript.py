@@ -7,7 +7,7 @@ import os
 url = os.environ['PAYNAL_BOT_URL']
 
 payloadModel = {
-  'Header': 'Guigo FrontApi\n',
+  'Header': 'Paynal Bot\n',
   'Body': 'Deploy Done\n' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 }
 
