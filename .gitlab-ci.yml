@@ -1,0 +1,14 @@
+# upload and build solution for azure environment 
+AzureStagePush:
+  stage: deploy
+  before_script:
+    - git remote rm azureStage 2>/dev/null && exit 0
+    - git remote add azureStage $REPOSITORY_AZURE
+  script: 
+    - git push azureStage HEAD:master --force
+  only:
+    - develop
+  tags:
+    - pihome
+  after_script:
+    - python3 afterScript.py
