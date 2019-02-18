@@ -16,7 +16,7 @@ $ node /bin/www
 
 ## Funtionalities
 
-Actually PaynalBot accept the followings requests:
+Currently PaynalBot accept the followings requests:
 
 [Telegram Update](https://core.telegram.org/bots/api#getting-updates)
 
