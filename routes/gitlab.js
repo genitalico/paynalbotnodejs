@@ -13,7 +13,7 @@ router.post('/PushEvents/:ChatId', function (req, res, next) {
     var commitsMsgText = commitsMsg.join('');
     var commitsMsgText2 = ['*Commits:* \n', commitsMsgText].join('');
     var branch = ['*Branch:* ', req.body.ref.replace('refs/heads/', ''), '\n'].join('');
-    var urlProject = ['[Url Project]','(',req.body.repository.homepage,')','\n\n'].join('');
+    var urlProject = ['\n','[Url Project]','(',req.body.repository.homepage,')','\n\n'].join('');
     var compare = ['[Compare Changes]','(',req.body.repository.homepage,,'/compare/',req.body.before,'...',req.body.after,')\n\n'].join('');
     var text = [object_kind, author, project, branch, totalCommits, urlProject,compare,commitsMsgText2].join('');
     var Model = {
