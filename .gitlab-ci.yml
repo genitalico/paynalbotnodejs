@@ -10,5 +10,3 @@ AzureStagePush:
     - develop
   tags:
     - pihome
-  after_script:
-    - python3 afterScript.py
