@@ -1,2 +1,2 @@
 //@PaynalBot
-exports.UrlBot = "";
+exports.UrlBot = process.env.TELEGRAM_URL_BOT;
