@@ -7,6 +7,6 @@ AzureStagePush:
   script: 
     - git push azureStage HEAD:master --force
   only:
-    - develop
+    - master
   tags:
     - pihome
