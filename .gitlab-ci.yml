@@ -9,4 +9,4 @@ AzureStagePush:
   only:
     - master
   tags:
-    - pihome
+    - saturn
